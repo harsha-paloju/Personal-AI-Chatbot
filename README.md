@@ -5,7 +5,7 @@ A simple and elegant AI chatbot built using **Flask** and **Ollama**. This proje
 ---
 
 ## 🌐Live preview
-link
+https://personal-ai-chatbot-7v2z.onrender.com/
 
 ## 🚀 Features
 
