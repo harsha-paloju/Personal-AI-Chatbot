@@ -1,0 +1,300 @@
+/* ---------------- GLOBAL ---------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 30px;
+}
+
+
+/* ---------------- CONTAINER ---------------- */
+
+.container {
+
+    width: 900px;
+
+    max-width: 95%;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.3);
+
+}
+
+
+/* ---------------- HEADER ---------------- */
+
+.header {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+}
+
+.header h1 {
+
+    font-size: 42px;
+
+    color: #111827;
+
+    margin-bottom: 10px;
+
+}
+
+.header p {
+
+    color: gray;
+
+    font-size: 18px;
+
+}
+
+
+/* ---------------- CHAT AREA ---------------- */
+
+.chat-area {
+
+    min-height: 350px;
+
+    max-height: 500px;
+
+    overflow-y: auto;
+
+    margin-bottom: 25px;
+
+    padding-right: 8px;
+
+}
+
+
+/* Scrollbar */
+
+.chat-area::-webkit-scrollbar {
+
+    width: 8px;
+
+}
+
+.chat-area::-webkit-scrollbar-thumb {
+
+    background: #cbd5e1;
+
+    border-radius: 20px;
+
+}
+
+
+/* ---------------- CHAT BOX ---------------- */
+
+.chat {
+
+    margin-bottom: 20px;
+
+    padding: 18px;
+
+    border-radius: 15px;
+
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.08);
+
+}
+
+
+.chat-title {
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    margin-bottom: 12px;
+
+}
+
+
+/* ---------------- USER ---------------- */
+
+.user-chat {
+
+    background: #dbeafe;
+
+    border-left: 6px solid #2563eb;
+
+}
+
+
+/* ---------------- AI ---------------- */
+
+.ai-chat {
+
+    background: #dcfce7;
+
+    border-left: 6px solid #16a34a;
+
+}
+
+
+/* ---------------- MESSAGE ---------------- */
+
+.chat-message {
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #1f2937;
+
+}
+
+
+/* Preserve formatting from Ollama */
+
+.bot-message {
+
+    white-space: pre-wrap;
+
+    word-wrap: break-word;
+
+}
+
+
+/* ---------------- FORM ---------------- */
+
+.input-form {
+
+    display: flex;
+
+    gap: 12px;
+
+}
+
+
+/* ---------------- INPUT ---------------- */
+
+.input-form input {
+
+    flex: 1;
+
+    padding: 16px;
+
+    font-size: 16px;
+
+    border-radius: 12px;
+
+    border: 1px solid #d1d5db;
+
+    transition: 0.3s;
+
+}
+
+.input-form input:focus {
+
+    outline: none;
+
+    border-color: #2563eb;
+
+    box-shadow: 0 0 10px rgba(37, 99, 235, 0.25);
+
+}
+
+
+/* ---------------- BUTTON ---------------- */
+
+.input-form button {
+
+    padding: 16px 30px;
+
+    background: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+.input-form button:hover {
+
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+
+}
+
+.input-form button:active {
+
+    transform: scale(0.96);
+
+}
+
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 768px) {
+
+    .container {
+
+        padding: 20px;
+
+    }
+
+    .header h1 {
+
+        font-size: 30px;
+
+    }
+
+    .chat-title {
+
+        font-size: 18px;
+
+    }
+
+    .chat-message {
+
+        font-size: 15px;
+
+    }
+
+    .input-form {
+
+        flex-direction: column;
+
+    }
+
+    .input-form button {
+
+        width: 100%;
+
+    }
+
+}
